@@ -17,7 +17,7 @@ function resolve(x) {
 
 	switch(action) {
 		case "-": result = numbers[0] - numbers[1]; break;
-		case "/": result = numbers[0] / numbers[1]; break;
+		case "/": if (numbers[1] == 0) throw new Error("Cannot divide by zero."); result = numbers[0] / numbers[1]; break;
 		case "*": result = numbers[0] * numbers[1]; break;
 		default : result = numbers[0] + numbers[1]; break;
 	}
@@ -26,6 +26,8 @@ function resolve(x) {
 }
 
 var calc = function (str) {
+	if (str.match(/[\(\)]/g) && str.match(/[\(\)]/g).length % 2 != 0) { throw new Error("Unmatched parentheses."); }
+
 	var copy = str.slice()
 	var patterns = [
 		{ pattern: /\(-*[0-9\.]+\)/, count: 0 },
@@ -34,9 +36,9 @@ var calc = function (str) {
 		{ pattern: /-*[0-9\.]+[\s]*[*\/]+[\s]*-*[0-9\.]+/, count: 0 },
 		{ pattern: /-*[0-9\.]+[\s]*[-+]+[\s]*-*[0-9\.]+/ , count: 0 }
 	];
+	var match;
 	var pattern;
 	var index = -1;
-	var match;
 
 	while (true) {
 		index++;
