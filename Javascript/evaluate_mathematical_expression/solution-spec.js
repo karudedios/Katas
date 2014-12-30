@@ -65,7 +65,7 @@ describe("math_solver_exception_cases",function () {
 		expect(function () { calc("7 - 1 / 0") }).toThrow(error);
 		expect(function () { calc("(4 + 7) / 0") }).toThrow(error);
 		expect(function () { calc("12 / (12 + 12 - 12 - 12)") }).toThrow(error);
-		expect(function () { calc("'(12 / (12 / (12 / (12 / (2 - 2)))))") }).toThrow(error);
+		expect(function () { calc("(12 / (12 / (12 / (12 / (2 - 2)))))") }).toThrow(error);
 	});
 
 	it("cannot have unmatched parentheses", function() {
@@ -75,5 +75,13 @@ describe("math_solver_exception_cases",function () {
 		expect(function () { calc("(2 + 4))") }).toThrow(error);
 		expect(function () { calc("(2 + (4 - (7))") }).toThrow(error);
 		expect(function () { calc("(2 + (4 - (7 + (12)))") }).toThrow(error);
+	});
+
+	it("cannot have letters", function () {
+		var error = new Error("You don't have enough numbers to be here.");
+		expect(function () { calc("A + b") }).toThrow(error);
+		expect(function () { calc("a - B") }).toThrow(error);
+		expect(function () { calc("A * b") }).toThrow(error);
+		expect(function () { calc("a / B") }).toThrow(error);
 	});
 })

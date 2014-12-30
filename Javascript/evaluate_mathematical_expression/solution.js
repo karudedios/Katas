@@ -27,6 +27,7 @@ function resolve(x) {
 
 var calc = function (str) {
 	if (str.match(/[\(\)]/g) && str.match(/[\(\)]/g).length % 2 != 0) { throw new Error("Unmatched parentheses."); }
+	if (str.match(/[^ \-+*\/0-9\(\).]/g)) { throw new Error("You don't have enough numbers to be here."); }
 
 	var copy = str.slice()
 	var patterns = [
