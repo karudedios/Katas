@@ -62,6 +62,7 @@ describe("math_solver_regular_cases", function (){
 describe("math_solver_exception_cases",function () {
 	it("cannot divide by zero" , function () {
 		var error = new Error("Cannot divide by zero.");
+		
 		expect(function () { calc("7 - 1 / 0") }).toThrow(error);
 		expect(function () { calc("(4 + 7) / 0") }).toThrow(error);
 		expect(function () { calc("12 / (12 + 12 - 12 - 12)") }).toThrow(error);
@@ -79,6 +80,7 @@ describe("math_solver_exception_cases",function () {
 
 	it("cannot have letters", function () {
 		var error = new Error("You don't have enough numbers to be here.");
+
 		expect(function () { calc("A + b") }).toThrow(error);
 		expect(function () { calc("a - B") }).toThrow(error);
 		expect(function () { calc("A * b") }).toThrow(error);
