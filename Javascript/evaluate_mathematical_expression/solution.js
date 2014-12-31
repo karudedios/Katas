@@ -51,7 +51,7 @@ var calc = function (str) {
 			element.count++;
 		}
 
-		if (element.count > 0) {
+		if (element.count > 0 && index > 0) {
 			patterns.forEach(function (x) { x.count = 0; })
 			index = -1;
 		}

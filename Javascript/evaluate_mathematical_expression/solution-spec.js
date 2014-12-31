@@ -60,7 +60,7 @@ describe("math_solver_regular_cases", function (){
 });
 
 describe("math_solver_exception_cases",function () {
-	it("cannot not divide by zero" , function () {
+	it("cannot divide by zero" , function () {
 		var error = new Error("Cannot divide by zero.");
 		expect(function () { calc("7 - 1 / 0") }).toThrow(error);
 		expect(function () { calc("(4 + 7) / 0") }).toThrow(error);
