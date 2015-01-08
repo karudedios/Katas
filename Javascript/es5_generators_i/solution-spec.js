@@ -71,6 +71,5 @@ describe("ES5 Generators Part 1", function (){
 		expect(8).toEqual(gen.next());
 		expect(3).toEqual(gen.next());
 		expect(20).toEqual(gen.next());
-		expect(20).toEqual(gen.next());
 	});
 });

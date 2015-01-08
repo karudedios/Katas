@@ -1,29 +1,5 @@
 function generator(sequencer) {
-	var $this = this;
-	$this.current = 0;
-	$this.previous = 0;
-	var args = [];
-
-	for (var i in arguments) {
-		if (+i > 0)
-			args.push(arguments[i]);
-	}
-
-	return {
-		next : function Next () {
-			var response = sequencer.apply(null, args).call(null, $this.current, $this.previous);
-
-			if (response.length && typeof(response) != 'string') {
-				$this.previous = response[0];
-				$this.current = response[1];
-				return response[2] || response[1];
-			}
-			else {
-				$this.current = response;
-				return response;
-			}
-		}
-	}
+	return { next : sequencer.apply(null, [].slice.call(arguments, 1)) }
 }
 
 function dummySeq() {
@@ -33,56 +9,63 @@ function dummySeq() {
 }
 
 function factorialSeq() {
-	return function x (current, acc) {
-		acc = (acc * current) || 1;
-		return [acc, ++current, acc || 1];
+	var pos = 0, count = 1;
+	return function () {
+		if (pos === 0) { ++pos; return count; }
+		return pos *= count++;
 	}
 }
 
 function fibonacciSeq() {
-	return function (current, previous) {
-		var current = current || 0;
-		var previous = previous || 0;
-		return [current, (current + previous) || 1];
+	var previous = 0, current = 1, next = 1;
+	return function () {
+		previous = current;
+		current = next;
+		next = (current + previous);
+		return previous;
 	}
 }
 
 function rangeSeq(start, step) {
-	return function (current) {
-		return current < start ? start : current + step;
+	var current = 0;
+	return function () {
+		if (current == 0) { current = start; }
+		else { current += step; }
+		return current;
 	}
 }
 
-function primeSeq() {
-	function is_prime(n) {
-		if (n < 2) return false;
-		var tn = n > 37 ? Math.ceil(Math.sqrt(n)) : n;
-		var _n = 2;
-		while (_n < tn) {
-			if (tn % _n === 0) return false;
-			_n++;
-		}
-		return true;
+function is_prime(n) {
+	if (n < 2) return false;
+	var tn = n > 37 ? Math.ceil(Math.sqrt(n)) : n;
+	var _n = 2;
+	while (_n < tn) {
+		if (tn % _n === 0) return false;
+		_n++;
 	}
-	return function (current) {
-		while(true) {
-			if (is_prime(++current)) break;
-		}
+	return true;
+}
+
+function primeSeq() {
+	var current = 1;
+	return function () {
+		while(!is_prime(++current));
 		return current;
 	}
 }
 
 function partialSumSeq() {
-	var sequence = arguments;
-	return function (current, index) {
+	var sequence = [].slice.call(arguments, 0);
+	var current = 0;
+	var index = 0;
+	return function () {
 		if (!sequence[index]) throw new Error("End of sequence");
-		var r = current + (sequence[index]);
-		var i = index + 1;
-		return [i, r];
+		current = current + (sequence[index++]);
+		return current;
 	}
 }
 
-var g = generator(partialSumSeq, 1, 2, 3);
+var g = generator(partialSumSeq, 1, 2, 3, 4, 5);
 //for (i in [0,1,2,3,4,5]) console.log(g.next());
 
 module.exports = {
