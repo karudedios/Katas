@@ -54,13 +54,36 @@ function rangeSeq(start, step) {
 }
 
 function primeSeq() {
+	function is_prime(n) {
+		if (n < 2) return false;
+		var tn = n > 37 ? Math.ceil(Math.sqrt(n)) : n;
+		var _n = 2;
+		while (_n < tn) {
+			if (tn % _n === 0) return false;
+			_n++;
+		}
+		return true;
+	}
+	return function (current) {
+		while(true) {
+			if (is_prime(++current)) break;
+		}
+		return current;
+	}
 }
 
 function partialSumSeq() {
+	var sequence = arguments;
+	return function (current, index) {
+		if (!sequence[index]) throw new Error("End of sequence");
+		var r = current + (sequence[index]);
+		var i = index + 1;
+		return [i, r];
+	}
 }
 
-var g = generator(factorialSeq);
-//for (i in [0,1,2,3]) console.log(g.next());
+var g = generator(partialSumSeq, 1, 2, 3);
+//for (i in [0,1,2,3,4,5]) console.log(g.next());
 
 module.exports = {
 	generator: generator,
