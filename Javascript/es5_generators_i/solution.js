@@ -65,9 +65,6 @@ function partialSumSeq() {
 	}
 }
 
-var g = generator(partialSumSeq, 1, 2, 3, 4, 5);
-//for (i in [0,1,2,3,4,5]) console.log(g.next());
-
 module.exports = {
 	generator: generator,
 	dummySeq: dummySeq,
