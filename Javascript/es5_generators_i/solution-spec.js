@@ -36,15 +36,6 @@ describe("ES5 Generators Part 1", function (){
 		expect(6).toEqual(gen.next());
 		expect(24).toEqual(gen.next());
 	});
-	
-	it("should get next step of sequence per call - Factorial", function (){
-		var gen = generator(factorialSeq);
-		expect(1).toEqual(gen.next());
-		expect(1).toEqual(gen.next());
-		expect(2).toEqual(gen.next());
-		expect(6).toEqual(gen.next());
-		expect(24).toEqual(gen.next());
-	});
 
 	it("should get next step of sequence per call - Range Call", function (){
 		var gen = generator(rangeSeq, 2, 5);
