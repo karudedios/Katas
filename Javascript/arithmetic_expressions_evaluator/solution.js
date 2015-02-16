@@ -15,11 +15,10 @@ var createOperator = (function() {
 			/-?\d+[\s]([*\/])[\s]-?\d+/,
 			/-?\d+[\s]([-+])[\s]-?\d+/,
 		];
-		var index = 0;
-		var exp = arguments[0];
+		var exp = expression;
 		var match, pattern;
 
-		while (pattern = executionPriority[index++]) {
+		while (pattern = executionPriority.shift()) {
 			while (match = exp.match(pattern)) {
 				var fn = fns.filter(function (x) { return x.symbol == match[1] })[0].fn;
 				exp = exp.replace(match[0], evaluate(match[0], fn));
