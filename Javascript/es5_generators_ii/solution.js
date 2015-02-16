@@ -1,35 +1,31 @@
 function pipeSeq(sequencer) {
-  var _pipe = [];
-  var _params = [];
-  var args = [].slice.call(arguments, 1);
-  return {
-    pipeline : function (fn) { _pipe.push(fn); _params.push([].slice.call(arguments, 1)); return this; },
-    invoke : function () {
-      var c;
-      var value;
-      for (var i in _pipe) {
-        value = sequencer.apply(null, args).call(this, value);
-        c = _pipe[i].call(this, value);
-        if (c) value = c;
-      }
+  var pipe = [];
+  var args = [].concat.apply([], [].slice.call(arguments, 1))
 
-      return value;
+  return {
+    pipeline: function (fn) { pipe.push(fn.apply(null, [].slice.call(arguments, 1))); return this; },
+    invoke: function () { 
+      return function () {
+        var n = sequencer.apply(null, args);
+        return function () {
+          return pipe.reduce(function (val, fn) { return fn.call(null, val); }, n.call());
+        };
+      }
     }
   }
 }
 
-
 function accumulator() {
-  var sum = 1;
+  var sum = 0;
   return function(value) {
-    sum += (value || 0);
-    return sum;
+    return sum += value;
   };
 }
 
 function isEven() {
-  var n = arguments[0];
-  return +n % 2 === 0 ? +n : false;
+  return function (n) {
+    return { status: n%2 == 0, number: +n };
+  }
 }
 
 function printEven(prefix) {
@@ -42,7 +38,9 @@ function printEven(prefix) {
   };
 }
 
-var seq = pipeSeq(accumulator)
-  .pipeline(isEven);
-
-for (i in [0,0,0,0,0]) (seq.invoke())
+module.exports = { 
+  pipeSeq: pipeSeq,
+  accumulator: accumulator,
+  isEven: isEven,
+  printEven: printEven
+};
