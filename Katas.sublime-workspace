@@ -1,0 +1,972 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"expe",
+				"expectations"
+			],
+			[
+				"pipeS",
+				"pipeSequence"
+			],
+			[
+				"pipe",
+				"pipeSeq"
+			],
+			[
+				"pipel",
+				"pipeline"
+			],
+			[
+				"pip",
+				"pipeline"
+			],
+			[
+				"apl",
+				"applySumAndCarry"
+			],
+			[
+				"x",
+				"xMark2"
+			],
+			[
+				"apply",
+				"applySumAndCarry"
+			],
+			[
+				"expec",
+				"expectedResult"
+			],
+			[
+				"exp",
+				"expect"
+			],
+			[
+				"eep",
+				"expectedResult"
+			],
+			[
+				"log",
+				"longest"
+			],
+			[
+				"placeHolderR",
+				"placeHolderReplace"
+			],
+			[
+				"subscriber",
+				"subscriberStatus"
+			],
+			[
+				"acc",
+				"accountInfo"
+			],
+			[
+				"account",
+				"accountInfo"
+			],
+			[
+				"Subscrier",
+				"Subscriber"
+			],
+			[
+				"Account",
+				"AccountStatusResponse"
+			],
+			[
+				"Rep",
+				"Response"
+			],
+			[
+				"REspn",
+				"ResponseSummary"
+			],
+			[
+				"subs",
+				"subscriberStatus"
+			],
+			[
+				"Subsc",
+				"SubscriberInfo"
+			],
+			[
+				"Sus",
+				"SubscriberInfo"
+			],
+			[
+				"subsc",
+				"subscriberStatus"
+			],
+			[
+				"Response",
+				"ResponseSummary"
+			],
+			[
+				"return",
+				"returnObj"
+			],
+			[
+				"mcd",
+				"_mcd"
+			],
+			[
+				"mcd_",
+				"mcd_helper"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"n",
+				"n2"
+			],
+			[
+				"just",
+				"Just"
+			],
+			[
+				"ma",
+				"Maybe"
+			],
+			[
+				"fromC",
+				"fromCharCode"
+			],
+			[
+				"char",
+				"charCodeAt"
+			],
+			[
+				"binar",
+				"binaryToDec"
+			],
+			[
+				"bi",
+				"binaryToDec"
+			],
+			[
+				"binary",
+				"binaryToDec"
+			],
+			[
+				"output",
+				"outputSize"
+			],
+			[
+				"bin",
+				"binary"
+			],
+			[
+				"by",
+				"binaryToDec"
+			],
+			[
+				"base",
+				"toBase64"
+			],
+			[
+				"eco",
+				"encodedString"
+			],
+			[
+				"Exp",
+				"Exp_2_17"
+			],
+			[
+				"Mul",
+				"Mul_5_8"
+			],
+			[
+				"Div",
+				"Div_12_4"
+			],
+			[
+				"Sub",
+				"Sub_7_9"
+			],
+			[
+				"ADd",
+				"Add"
+			],
+			[
+				"Add",
+				"Add_5_2"
+			],
+			[
+				"create",
+				"createOperator"
+			],
+			[
+				"pi",
+				"pipeline"
+			],
+			[
+				"dummy",
+				"dummySeq"
+			],
+			[
+				"List",
+				"ListNode"
+			],
+			[
+				"Lis",
+				"ListNode"
+			],
+			[
+				"deci",
+				"decimalCase"
+			],
+			[
+				"Re",
+				"RegExp"
+			],
+			[
+				"Mod",
+				"_modHelper"
+			],
+			[
+				"patt",
+				"patternIndex"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"patte",
+				"patternIndex"
+			],
+			[
+				"match",
+				"matches"
+			],
+			[
+				"inva",
+				"invalidScenarios"
+			],
+			[
+				"toLower",
+				"toLower_core"
+			],
+			[
+				"Default",
+				"DefaultData"
+			],
+			[
+				"__",
+				"__order__"
+			],
+			[
+				"Invo",
+				"Invoke"
+			],
+			[
+				"time",
+				"TimesTwo"
+			],
+			[
+				"is",
+				"isBetweenOneAndFive"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"reduce",
+				"reduceCondition"
+			],
+			[
+				"_",
+				"__stack__"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"re",
+				"relativeHeight"
+			],
+			[
+				"Relative",
+				"relativeWidth"
+			],
+			[
+				"co",
+				"console"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Javascript/es5_generators_ii/solution.js",
+			"settings":
+			{
+				"buffer_size": 1039,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Javascript/es5_generators_ii/solution-spec.js",
+			"settings":
+			{
+				"buffer_size": 2293,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Javascript/es5_generators_i/solution.js",
+			"settings":
+			{
+				"buffer_size": 1460,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/Jasmine.sublime-build",
+	"command_palette":
+	{
+		"height": 356.0,
+		"selected_items":
+		[
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"build",
+				"Build: Build"
+			],
+			[
+				"javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"coffeescript",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"coffess",
+				"Coffee: Run Script / Selection"
+			],
+			[
+				"coffesscr",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"coffescript",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"coffeescripot",
+				"Coffee: Run Script / Selection"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"jac",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javascri",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"coffeescr",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"jAVASC",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"coffeescrip",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"compile",
+				"Coffee: Compile File"
+			],
+			[
+				"coffeesc",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"package ",
+				"Preferences: Browse Packages"
+			],
+			[
+				"packea",
+				"Preferences: Browse Packages"
+			],
+			[
+				"javac",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"c#",
+				"Set Syntax: C#"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML (Tcl)"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"close",
+			"exit",
+			"cls",
+			"var stuff",
+			"dirname",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')",
+			"clear",
+			"cls()",
+			"clear()",
+			"import urllib2,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/cdedios/Documents/Github/Katas",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_i",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_ii"
+	],
+	"file_history":
+	[
+		"/C/Users/cdedios/Desktop/ExampleSTIResponse.xml",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_i/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_i/solution.js",
+		"/C/Users/cdedios/Desktop/batida.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/additionless_addition/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/additionless_addition/solution.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/adding_big_numbers/solution.js",
+		"/C/Users/cdedios/Desktop/hotspot.cmd",
+		"/C/Users/cdedios/Documents/Github/Katas/Katas.sublime-project",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/base64_encoding/solution.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/base64_encoding/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/GithubProject.sublime-project",
+		"/C/Users/cdedios/Desktop/ShouldNotLoseThis.txt",
+		"/C/Users/cdedios/Desktop/CarrierInfo.js",
+		"/C/Users/cdedios/Desktop/stuff.js",
+		"//APN-QA-CIN1/c$/inetpub/racodev.myaudiconnect.com/Web.config",
+		"//APN-QA-CIN1/c$/Logs/racodev.audi.bridge.web.txt",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/monads__the_maybe_token/solution-spec.js",
+		"/C/Users/cdedios/Desktop/stuff.coffee",
+		"/C/Users/cdedios/Desktop/ForWheneverJorgeIsExposingJavascript.js",
+		"/C/Users/cdedios/Documents/Hanoi/Hanoi.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_ii/solution.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/monads__the_maybe_token/solution.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/arithmetic_expressions_evaluator/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/arithmetic_expressions_evaluator/solution.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/molecule_to_atoms/solution.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/molecule_to_atoms/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/dunno/solution.js",
+		"/C/Users/cdedios/Desktop/Scraps.txt",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_ii/solution-spec.js",
+		"/C/Users/cdedios/Documents/investigation_results.txt",
+		"/C/Users/cdedios/Documents/Things_written_down.txt",
+		"/C/Users/cdedios/Documents/This_written_down",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/functional_list/solution.js",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/adding_big_numbers/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/functional_list/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/does_my_number_look_big_in_this/solution.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/does_my_number_look_big_in_this/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/mod4_regex/solution.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/mod4_regex/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/evaluate_mathematical_expression/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/lru_cache/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/lru_cache/solution.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/evaluate_mathematical_expression/solution.js",
+		"/C/Users/cdedios/Documents/Github/Lazy.js/spec/LazySpec.js",
+		"/C/Users/cdedios/Documents/LazyEvaluation/spec/LazySpec.js",
+		"/C/Users/cdedios/Documents/LazyEvaluation/src/Lazy.js",
+		"/C/Users/cdedios/Documents/JSThingies/MathSolver.js",
+		"/C/Users/cdedios/ForOctavio.js",
+		"/C/Users/cdedios/Documents/JSThingies/MathSolver",
+		"/C/Users/cdedios/Documents/LazyEvaluation/SpecRunner.html",
+		"/C/Users/cdedios/Documents/mathSolver/mathSolver.js",
+		"/C/Users/cdedios/Documents/LazyEvaluation/src/Helpers/LazyHelper.js",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/User/Jasmine.sublime-build",
+		"/C/Users/cdedios/Downloads/jasmine-standalone-2.1.3/spec/PlayerSpec.js",
+		"/C/Users/cdedios/Documents/LazyEvaluation/spec/LazySpecs.js",
+		"/C/Users/cdedios/Downloads/jasmine-standalone-2.1.3/SpecRunner.html",
+		"/C/Users/cdedios/Documents/LazyEvaluation/specs/Lazy.js",
+		"/C/Users/cdedios/Documents/LazyEvaluation/LazyTest.js",
+		"/C/Users/cdedios/Documents/LazyEvaluation/Lazy.js",
+		"/C/Users/cdedios/Documents/LazyEvaluation/specs/Lazy",
+		"/C/Users/cdedios/LogicalThingies",
+		"/C/Users/cdedios/Downloads/jasmine-standalone-2.1.3/src/Player.js",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/cdedios/Documents/LazyTest.js",
+		"/C/Users/cdedios/Documents/Lazy.js",
+		"/C/Users/cdedios/Documents/test.js",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/User/Node.sublime-build",
+		"/C/Users/cdedios/Documents/AudiConnect/Audi.Bridge.Web/Angular/_Shared/Services/CallLogApi.js",
+		"/C/Users/cdedios/Documents/AudiConnect/Audi.Bridge.Web/Angular/_Shared/Services/CallLogApi.coffee",
+		"/C/Users/cdedios/Documents/Test.csv",
+		"/C/Users/cdedios/Documents/Stuff/ExtensionMethods.coffee",
+		"/C/Users/cdedios/Documents/Stuff/Script.coffee",
+		"/C/Users/cdedios/Documents/Stuff/ExtensionMethods.js",
+		"/C/Users/cdedios/Documents/Stuff/Script.js",
+		"/C/Users/cdedios/Documents/Stuff/Drawer.js",
+		"/C/Users/cdedios/Documents/Stuff/Drawer.coffee",
+		"/C/Users/cdedios/Documents/Stuff/Index.html",
+		"/C/Users/cdedios/Documents/Html5Snake/Snake.js",
+		"/C/Users/cdedios/Documents/Stuff/jquery.min.js",
+		"/C/Users/cdedios/Documents/Html5Snake/Script.coffee",
+		"/C/Users/cdedios/Documents/Html5Snake/Snake.html",
+		"/C/Users/cdedios/Documents/Trios2D/index.html",
+		"/C/Users/cdedios/Documents/Trios2D/modules/Animation.js",
+		"/C/Users/cdedios/Documents/Trios2D/PlayerFunctions.coffee",
+		"/C/Users/cdedios/Documents/Trios2D/GameFunctions.coffee",
+		"/C/Users/cdedios/Documents/Trios2D/Code.coffee",
+		"/C/Users/cdedios/Documents/Trios2D/GameFunctions.js",
+		"/C/Users/cdedios/Documents/Trios2D/PlayerFunctions.js",
+		"/C/Users/cdedios/Documents/Trios2D/Code.js",
+		"/C/Users/cdedios/Documents/Trios2D/Trios2D.js",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/User/multiple_commands.py",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/Better CoffeeScript/Keymaps/Default (Windows).sublime-keymap",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/CoffeeCompile/Keymaps/Default (Windows).sublime-keymap",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/CoffeeCompile/CoffeeCompile.sublime-settings",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/User/CoffeeCompile.sublime-settings",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Installed Packages/Better CoffeeScript.sublime-package",
+		"/C/Users/cdedios/Documents/AudiConnect/Audi.Bridge.Web/Api/SimOrderTransactionController.cs",
+		"/C/Users/cdedios/Desktop/report.csv"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ES6",
+			"\");\n",
+			"())\n",
+			")\n",
+			"())\n",
+			"x",
+			")\n",
+			"+",
+			"(\\(.*.\\)) +\\+ +''",
+			"\\(.*.\\) +\\+ +''",
+			"\");\n",
+			")\n",
+			"shortest",
+			"longest",
+			")",
+			" ",
+			"0",
+			"count",
+			"0",
+			");\n",
+			".eval().valueOf()).toEqual(-2);",
+			"expect(new Sub(7, 9).eval().valueOf()).toEqual(-2);",
+			"expect(new Add(2, 5).eval().valueOf()).toEqual(7);",
+			");\n",
+			"expect(new Sub(7, 9).eval().valueOf()).toEqual(-2);",
+			"\n		expect(new Sub(7, 9).eval().valueOf()).toEqual(-2);",
+			"new Value",
+			"())",
+			"\n\n	it(\"should return false for non-narcissistic numbers\", function() {\n		nonNarcissisticCollection.forEach(function (number) {\n			expect(narcissistic(number)).toBeFalsy();\n		})\n	});",
+			";\n",
+			"\")",
+			"\\t",
+			">\n",
+			"Lazify",
+			"Array.prototype.invoker = function () {\n	return new Lazy(this, false);\n};",
+			")\n",
+			"\"",
+			")\n",
+			"\nString.prototype.toLowerCase = undefined;\nString.prototype.toLowerCase = function() {\n	return this.split('').map(function (x) { return String.fromCharCode(x.charCodeAt(0) | 32); }).join(\"\");\n}",
+			"}\n",
+			");",
+			"}\n",
+			" =",
+			"=",
+			"drawFruit",
+			"doFood",
+			"doSnake",
+			"pause",
+			"\n	pause = () ->\n		clearInterval()",
+			")\n",
+			">\n",
+			"game_loop",
+			"js",
+			"2",
+			">\n",
+			"engine",
+			"[a-zA-Z ]*\\: ",
+			"''",
+			"value",
+			" \\\\>\\n\");",
+			"_response.Write(\"\\t\\t",
+			"_response.Write\\(\"\\t\\t",
+			"_response.Write\\(\\\"\\t\\t",
+			"_response.Write(\"\\t\\t",
+			", ",
+			",",
+			"=",
+			"\\$scope.user.(.*)",
+			" ",
+			"Country",
+			"([a-zA-Z .\"\\(]*, (self.*)\\)\\);)",
+			"Taxes.Add(new LineItemModel(\"Federal Tax\", self.FederalTax));",
+			"([a-zA-Z .\"\\(]*, (self.*)\\)\\);)",
+			"([a-zA-Z .\"\\(]*, (self.*)\\)\\))",
+			" ",
+			"\\* ",
+			"decimal",
+			"(Surcharge)",
+			"(Tax[es]*)",
+			"Surcharge",
+			"(Tax[es]*)",
+			"\\* ",
+			"public [ a-z?]* ([A-Z])",
+			" \\{[ a-zA-Z;]*\\}",
+			"public [ a-z]* ([A-Z])",
+			"\\,",
+			"public string ",
+			"\\, ",
+			" \\{ get; set; \\}",
+			"public (int[ ?])",
+			"\\,",
+			"\\\\n",
+			"\\,",
+			"\\\\n",
+			"\\,",
+			"\\\\n",
+			"\\,",
+			"\\\\n",
+			"\\,"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ES5",
+			"f",
+			"(String$1",
+			"String$1",
+			"$1",
+			"smallest",
+			"biggest",
+			"\\n",
+			"1",
+			"",
+			"',\\n'",
+			"",
+			":",
+			"getFruit",
+			"drawFruit",
+			"drawSnake",
+			"new CustomField {Id = ",
+			"undefined",
+			"ng-value",
+			"",
+			":",
+			"\\$scope.user.$1 = response.$1",
+			"$1",
+			"&1",
+			"",
+			"County",
+			"if ($2 > 0) $1",
+			"if ($2 > 0)\\n\\t\\t$1\\n",
+			"$1$2",
+			"",
+			"decimal\\n",
+			"$1 decimal",
+			"decimal",
+			"ALTER TABLE SubscriptionTransaction\\nADD ",
+			"ALTER TABLE SubscriptionTransaction\\n ADD",
+			"",
+			"$1",
+			"",
+			"$1",
+			"\\t",
+			"\\, \"",
+			"\\,",
+			"\"",
+			", \"",
+			"\\t",
+			"\\n",
+			"\\t",
+			"\\n",
+			"\\t",
+			"\\n",
+			"\\t",
+			"\\n",
+			"\\t"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Javascript/es5_generators_ii/solution.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Javascript/es5_generators_ii/solution-spec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								493,
+								493
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Javascript/es5_generators_i/solution.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1460,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								507,
+								507
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffee_compile_output":
+	{
+		"height": 147.0
+	},
+	"output.coffeecompile_output":
+	{
+		"height": 177.0
+	},
+	"output.exec":
+	{
+		"height": 215.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Katas.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 35.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

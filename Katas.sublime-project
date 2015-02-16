@@ -1,0 +1,28 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"tab_size": 2
+	},
+	"build_systems":
+	[
+		{
+			"name": "Jasmine",
+			"file_regex": ".*.-spec\\.js",
+			"shell_cmd": "jasmine-node $filename",
+			"selector": "source-spec.js"
+		},
+		{
+			"name": "Compile JS",
+			"file_regex": ".*.\\.js",
+			"shell_cmd": "taskkill -F -IM node.exe & node $filename",
+			"selector": "source.js"
+		}
+	]
+}
