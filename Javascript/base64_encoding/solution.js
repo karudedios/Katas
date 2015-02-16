@@ -16,7 +16,7 @@ String.prototype.toBase64 = function () {
 }
 
 String.prototype.fromBase64 = function () {
-	var bytes = this.replace(/=/g, "")
+	return this.replace(/=/g, "")
 	.split('')
 	.map(function (v) {
 		var x = values.indexOf(v);
@@ -28,8 +28,6 @@ String.prototype.fromBase64 = function () {
 	.map(binaryToDec)
 	.map(function (x) { return String.fromCharCode(x); })
 	.join('');
-
-	return (bytes);
 }
 
 var binaryToDec = function(str) {
