@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"LRU",
+				"LRUCache"
+			],
+			[
+				"pipeseq",
+				"pipeSequence"
+			],
+			[
+				"Seq",
+				"sequence"
+			],
+			[
+				"rag",
+				"rangeSeq"
+			],
+			[
 				"expe",
 				"expectations"
 			],
@@ -308,31 +324,23 @@
 	"buffers":
 	[
 		{
-			"file": "Javascript/es5_generators_ii/solution.js",
+			"file": "Javascript/lru_cache/solution.js",
 			"settings":
 			{
-				"buffer_size": 1039,
+				"buffer_size": 274,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Javascript/es5_generators_ii/solution-spec.js",
+			"file": "Javascript/lru_cache/solution-spec.js",
 			"settings":
 			{
-				"buffer_size": 2293,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Javascript/es5_generators_i/solution.js",
-			"settings":
-			{
-				"buffer_size": 1460,
+				"buffer_size": 123,
 				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "Packages/User/Jasmine.sublime-build",
+	"build_system": "Packages/User/Node.sublime-build",
 	"command_palette":
 	{
 		"height": 356.0,
@@ -492,15 +500,17 @@
 	"expanded_folders":
 	[
 		"/C/Users/cdedios/Documents/Github/Katas",
-		"/C/Users/cdedios/Documents/Github/Katas/Javascript",
-		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_i",
-		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_ii"
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript"
 	],
 	"file_history":
 	[
+		"/C/Users/cdedios/Documents/Test.csv",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_ii/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_i/solution.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/molecule_to_atoms/solution.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_ii/solution.js",
 		"/C/Users/cdedios/Desktop/ExampleSTIResponse.xml",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_i/solution-spec.js",
-		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_i/solution.js",
 		"/C/Users/cdedios/Desktop/batida.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/additionless_addition/solution-spec.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/additionless_addition/solution.js",
@@ -519,15 +529,12 @@
 		"/C/Users/cdedios/Desktop/stuff.coffee",
 		"/C/Users/cdedios/Desktop/ForWheneverJorgeIsExposingJavascript.js",
 		"/C/Users/cdedios/Documents/Hanoi/Hanoi.js",
-		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_ii/solution.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/monads__the_maybe_token/solution.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/arithmetic_expressions_evaluator/solution-spec.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/arithmetic_expressions_evaluator/solution.js",
-		"/C/Users/cdedios/Documents/Github/Katas/Javascript/molecule_to_atoms/solution.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/molecule_to_atoms/solution-spec.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/dunno/solution.js",
 		"/C/Users/cdedios/Desktop/Scraps.txt",
-		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_ii/solution-spec.js",
 		"/C/Users/cdedios/Documents/investigation_results.txt",
 		"/C/Users/cdedios/Documents/Things_written_down.txt",
 		"/C/Users/cdedios/Documents/This_written_down",
@@ -571,7 +578,6 @@
 		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/User/Node.sublime-build",
 		"/C/Users/cdedios/Documents/AudiConnect/Audi.Bridge.Web/Angular/_Shared/Services/CallLogApi.js",
 		"/C/Users/cdedios/Documents/AudiConnect/Audi.Bridge.Web/Angular/_Shared/Services/CallLogApi.coffee",
-		"/C/Users/cdedios/Documents/Test.csv",
 		"/C/Users/cdedios/Documents/Stuff/ExtensionMethods.coffee",
 		"/C/Users/cdedios/Documents/Stuff/Script.coffee",
 		"/C/Users/cdedios/Documents/Stuff/ExtensionMethods.js",
@@ -603,7 +609,7 @@
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -617,6 +623,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"next",
+			"())\n",
+			"]);\n",
+			"])\n",
+			"pop",
+			"console.log",
 			"ES6",
 			"\");\n",
 			"())\n",
@@ -786,54 +798,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Javascript/es5_generators_ii/solution.js",
+					"file": "Javascript/lru_cache/solution.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1039,
+						"buffer_size": 274,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								127,
-								127
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Javascript/es5_generators_ii/solution-spec.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2293,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								493,
-								493
+								274,
+								274
 							]
 						],
 						"settings":
@@ -841,39 +823,44 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 2,
-					"file": "Javascript/es5_generators_i/solution.js",
+					"buffer": 1,
+					"file": "Javascript/lru_cache/solution-spec.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1460,
+						"buffer_size": 123,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								507,
-								507
+								119,
+								119
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
-						"translation.x": 0.0,
-						"translation.y": 504.0,
+						"translation.x": 7.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -896,11 +883,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.555364806867,
 			1.0
 		],
 		"rows":
@@ -920,7 +914,7 @@
 	},
 	"output.exec":
 	{
-		"height": 215.0
+		"height": 209.0
 	},
 	"output.find_results":
 	{
@@ -963,7 +957,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 201.0,
 	"status_bar_visible": true,
 	"template_settings":
