@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"getTagTypeAndContent"
+			],
+			[
 				"LRU",
 				"LRUCache"
 			],
@@ -324,18 +328,18 @@
 	"buffers":
 	[
 		{
-			"file": "Javascript/lru_cache/solution.js",
+			"file": "/C/Users/cdedios/Documents/AngularStuff/Index.html",
 			"settings":
 			{
-				"buffer_size": 274,
+				"buffer_size": 195,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Javascript/lru_cache/solution-spec.js",
+			"file": "/C/Users/cdedios/Documents/AngularStuff/WhateverApp.coffee",
 			"settings":
 			{
-				"buffer_size": 123,
+				"buffer_size": 194,
 				"line_ending": "Windows"
 			}
 		}
@@ -343,9 +347,21 @@
 	"build_system": "Packages/User/Node.sublime-build",
 	"command_palette":
 	{
-		"height": 356.0,
+		"height": 150.0,
 		"selected_items":
 		[
+			[
+				"coffee",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
 			[
 				"xml",
 				"Set Syntax: XML"
@@ -353,14 +369,6 @@
 			[
 				"build",
 				"Build: Build"
-			],
-			[
-				"javascript",
-				"Set Syntax: JavaScript"
-			],
-			[
-				"coffee",
-				"Set Syntax: CoffeeScript"
 			],
 			[
 				"coffeescript",
@@ -455,10 +463,6 @@
 				"Set Syntax: JavaScript"
 			],
 			[
-				"html",
-				"Set Syntax: HTML"
-			],
-			[
 				"c#",
 				"Set Syntax: C#"
 			],
@@ -474,6 +478,7 @@
 		"height": 126.0,
 		"history":
 		[
+			"sublime.packages_path()",
 			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
 			"close",
 			"exit",
@@ -499,13 +504,26 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/cdedios/Documents/Github/Katas",
-		"/C/Users/cdedios/Documents/Github/Katas/Javascript"
+		"/C/Users/cdedios/Documents/Github/Katas"
 	],
 	"file_history":
 	[
-		"/C/Users/cdedios/Documents/Test.csv",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/cdedios/Documents/AngularStuff/WhateverApp.js",
+		"/C/Users/cdedios/Documents/AudiConnect/Audi.Web/Log/audi.att.web.txt",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_iii/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_iii/solution.js",
+		"/C/Users/cdedios/Documents/Github/Eloquent Javascript/Chapter 6/Book.js",
+		"/C/Users/cdedios/Documents/Github/Eloquent Javascript/Chapter 6/6.3.js",
+		"/C/Users/cdedios/floobits/welcome.md",
+		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/User/Node.sublime-build",
+		"/C/Users/cdedios/Documents/Github/Eloquent Javascript/Chapter 6/Book",
+		"/C/Users/cdedios/Desktop/ShouldNotLoseThis.txt",
+		"/C/Logs/audi.bridge.web.txt",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_ii/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/lru_cache/solution-spec.js",
+		"/C/Users/cdedios/Documents/Github/Katas/Javascript/lru_cache/solution.js",
+		"/C/Users/cdedios/Documents/Test.csv",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_i/solution.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/molecule_to_atoms/solution.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/es5_generators_ii/solution.js",
@@ -520,7 +538,6 @@
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/base64_encoding/solution.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/base64_encoding/solution-spec.js",
 		"/C/Users/cdedios/Documents/Github/GithubProject.sublime-project",
-		"/C/Users/cdedios/Desktop/ShouldNotLoseThis.txt",
 		"/C/Users/cdedios/Desktop/CarrierInfo.js",
 		"/C/Users/cdedios/Desktop/stuff.js",
 		"//APN-QA-CIN1/c$/inetpub/racodev.myaudiconnect.com/Web.config",
@@ -548,8 +565,6 @@
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/mod4_regex/solution.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/mod4_regex/solution-spec.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/evaluate_mathematical_expression/solution-spec.js",
-		"/C/Users/cdedios/Documents/Github/Katas/Javascript/lru_cache/solution-spec.js",
-		"/C/Users/cdedios/Documents/Github/Katas/Javascript/lru_cache/solution.js",
 		"/C/Users/cdedios/Documents/Github/Katas/Javascript/evaluate_mathematical_expression/solution.js",
 		"/C/Users/cdedios/Documents/Github/Lazy.js/spec/LazySpec.js",
 		"/C/Users/cdedios/Documents/LazyEvaluation/spec/LazySpec.js",
@@ -570,12 +585,10 @@
 		"/C/Users/cdedios/Documents/LazyEvaluation/specs/Lazy",
 		"/C/Users/cdedios/LogicalThingies",
 		"/C/Users/cdedios/Downloads/jasmine-standalone-2.1.3/src/Player.js",
-		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/cdedios/Documents/LazyTest.js",
 		"/C/Users/cdedios/Documents/Lazy.js",
 		"/C/Users/cdedios/Documents/test.js",
-		"/C/Users/cdedios/AppData/Roaming/Sublime Text 3/Packages/User/Node.sublime-build",
 		"/C/Users/cdedios/Documents/AudiConnect/Audi.Bridge.Web/Angular/_Shared/Services/CallLogApi.js",
 		"/C/Users/cdedios/Documents/AudiConnect/Audi.Bridge.Web/Angular/_Shared/Services/CallLogApi.coffee",
 		"/C/Users/cdedios/Documents/Stuff/ExtensionMethods.coffee",
@@ -623,6 +636,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"/Subscription",
 			"next",
 			"())\n",
 			"]);\n",
@@ -803,30 +817,30 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Javascript/lru_cache/solution.js",
+					"file": "/C/Users/cdedios/Documents/AngularStuff/Index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 274,
+						"buffer_size": 195,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								274,
-								274
+								137,
+								137
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 240.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -837,30 +851,30 @@
 			[
 				{
 					"buffer": 1,
-					"file": "Javascript/lru_cache/solution-spec.js",
+					"file": "/C/Users/cdedios/Documents/AngularStuff/WhateverApp.coffee",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 123,
+						"buffer_size": 194,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								119,
-								119
+								194,
+								194
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
 						},
-						"translation.x": 7.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -894,7 +908,7 @@
 		"cols":
 		[
 			0.0,
-			0.555364806867,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -910,7 +924,7 @@
 	},
 	"output.coffeecompile_output":
 	{
-		"height": 177.0
+		"height": 234.0
 	},
 	"output.exec":
 	{
@@ -950,14 +964,14 @@
 		],
 		"width": 392.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 201.0,
 	"status_bar_visible": true,
 	"template_settings":

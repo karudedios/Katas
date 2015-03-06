@@ -1,14 +1,15 @@
 function pipeSeq(sequencer) {
   var pipe = [];
-  var args = [].concat.apply([], [].slice.call(arguments, 1))
-
+  var seq = generator.apply(null, [sequencer].concat([].slice.call(arguments, 1)));
+  
   return {
     pipeline: function (fn) { pipe.push(fn.apply(null, [].slice.call(arguments, 1))); return this; },
     invoke: function () { 
       return function () {
-        var n = sequencer.apply(null, args);
         return function () {
-          return pipe.reduce(function (val, fn) { return fn.call(null, val); }, n.call());
+          return pipe.reduce(function (val, fn) {
+            return fn(val); 
+          }, seq.next());
         };
       }
     }

@@ -1,5 +1,5 @@
 function generator(sequencer) {
-	return { next : sequencer.apply(null, [].slice.call(arguments, 1)) }
+	return { next : sequencer.apply(null, [].concat.apply([], [].slice.call(arguments, 1))) }
 }
 
 function dummySeq() {
