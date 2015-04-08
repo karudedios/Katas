@@ -4,12 +4,10 @@ function pipeSeq(sequencer) {
   var limits = []
   return {
     addLimit: function(limiter) {
-      limits.push(limiter.apply(null, [].slice.call(arguments, 1)))
-      return this;
+      return limits.push(limiter.apply(null, [].slice.call(arguments, 1))), this;
     },
     pipeline: function(pipe) {
-      pipes.push(pipe.apply(null, [].slice.call(arguments, 1)));
-      return this;
+      return pipes.push(pipe.apply(null, [].slice.call(arguments, 1))), this;
     },
     invoke: function() {
       return function() {

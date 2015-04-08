@@ -43,7 +43,7 @@ describe("ES5 Generators - Part 3", function () {
 			[ES5_2.accumulator], // pipelines
 			[ES5_3.stepLimiter], // limiters
 			[4], // limiter params
-			4, // last non failing index
+			4, // last non failing run
 			[1, 2, 4, 7, Error] // expectations
 		);
 	});
