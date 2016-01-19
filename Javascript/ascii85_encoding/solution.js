@@ -1,8 +1,6 @@
 'use strict';
 
 String.prototype.toAscii85 = function() {
-  if (!this) return;
-
   let charsToRemove = 1;
 
   let FourToAscii = (st) => {
@@ -23,7 +21,7 @@ String.prototype.toAscii85 = function() {
     return [4, 3, 2, 1, 0].map(convertToAscii85(n)).map(intToChar).join('').replace(/!!!!!/g, 'z');
   };
 
-  return `<~${(this.match(/.{1,4}/g).map(FourToAscii).join('') + ' ').slice(0, -charsToRemove)}~>`;
+  return `<~${(this.match(/.{1,4}|.{0}/g).map(FourToAscii).join('') + ' ').slice(0, -charsToRemove)}~>`;
 }
 
 String.prototype.fromAscii85 = function() {
@@ -41,6 +39,4 @@ String.prototype.fromAscii85 = function() {
   return (this.replace(/z/g, '!!!!').match(/[^<~>]{1,5}/g).map(fiveToText).join('') + ' ').slice(0, -charsToRemove);
 }
 
-console.log(
-  "somewhat difficult".toAscii85(),
-  "<~F)Po,GA(E,+Co1uAnbatCif~>".fromAscii85());
+console.log("\0".toAscii85());

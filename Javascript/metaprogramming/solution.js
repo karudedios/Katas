@@ -50,9 +50,7 @@ var defgeneric = function(name) {
 
 	tryApply.findMethod = function() {
 		var args = [].slice.call(arguments, 0);
-		var cScenarios = scenarios.slice();
-		var validScenarios = cScenarios.filter(function(scenario) { return valid(scenario, args)});
-		return executionOrder = validScenarios;
+		return scenarios.filter(function(scenario) { return valid(scenario, args)});
 	}
 
 	return tryApply;
@@ -73,11 +71,11 @@ var laysEggs = defgeneric("laysEggs");
 laysEggs
   .defmethod('Mammal', function () { return false; })
   .defmethod('Platypus', function () { return true; })
-  .defmethod('Platypus', function () { console.log('Before platypus egg check.'); }, 'before')
   .defmethod('Mammal', function () { console.log('Before mammal egg check.'); }, 'before')
+  .defmethod('Platypus', function () { console.log('Before platypus egg check.'); }, 'before')
   .defmethod('*', function () { console.log('Before egg check.'); }, 'before')
-  .defmethod('Mammal', function () { console.log('After mammal egg check.'); }, 'after')
-  .defmethod('Platypus', function () { console.log ('After platypus egg check.'); }, 'after');
+  .defmethod('Platypus', function () { console.log ('After platypus egg check.'); }, 'after')
+  .defmethod('Mammal', function () { console.log('After mammal egg check.'); }, 'after');
 
 console.log(
 	laysEggs(new Platypus())
