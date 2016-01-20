@@ -1,0 +1,17 @@
+{
+  "name": "katas-javascript",
+  "version": "1.0.0",
+  "description": "Javascript portion of the Katas repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carlos de Dios",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "istanbul": "^0.4.2",
+    "jshint": "^2.9.1",
+    "mocha": "^2.3.4"
+  }
+}

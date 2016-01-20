@@ -1,0 +1,30 @@
+{
+  "name": "katas",
+  "version": "1.0.0",
+  "description": "Repository to work with KAtas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karudedios/Katas.git"
+  },
+  "keywords": [
+    "kata",
+    "javascript",
+    "es6",
+    "mocha",
+    "chai"
+  ],
+  "author": "Carlos de Dios",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/karudedios/Katas/issues"
+  },
+  "homepage": "https://github.com/karudedios/Katas#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
