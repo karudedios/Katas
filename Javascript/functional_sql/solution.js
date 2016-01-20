@@ -30,14 +30,14 @@ const query = (() => {
       return new Query(1, this._from, this._whered, newStack, this._grouped);
     }
 
-    where(predicate) {
-      const newStack = compose(this.stack, (arr) => arr.filter(predicate));
+    where(...predicates) {
+      const newStack = compose(this.stack, (arr) => arr.filter(i => predicates.some(p => p(i))));
       return new Query(this._selected, this._from, 1, newStack, this._grouped);
     }
 
     groupBy(...props) {
       const groupBy = (prop, ...props) => (arr) => {
-        const groups = Object.keys(arr.map(prop).reduce((ob, x) => (ob[x] = 1) && ob, {}));
+        const groups = arr.map(prop).reduce((col, x) => col.indexOf(x) === -1 ? col.concat([x]) : col, []);
 
         const innerGroupBy = (props, arr) => (props.length ? groupBy(...props) : id)(arr);
 
@@ -53,22 +53,19 @@ const query = (() => {
       return new Query(this._selected, this._from, this._whered, newStack, this._grouped);
     }
 
-    having(predicate) {
+    having(...predicates) {
       if (!this._grouped)
         throw "Cannot use HAVING clause before GROUP BY";
 
-      const having = (predicate) => (groups) => {
-        const [ [h, ...content] ] = groups.filter(predicate);
+      const having = (predicates) => (groups) => {
+        const [ xs, ...ys ] = groups.filter(group => predicates.some(p => p(group)));
 
-        const traverseGroups = ([ [first, ...next] ]) =>
-          first && typeof first[0] == 'string' && first[1] instanceof Array
-            ? first[1].concat(traverseGroups([ next ])).sort()
-            : [];
+        const traverseGroups = ([first, ...next]) => first ? [first].concat(traverseGroups(next)).sort() : [];
 
-        return [[h, traverseGroups(content)]]
+        return [xs && traverseGroups(xs) || [], ...(ys.length && ys.map(traverseGroups) || [])];
       }
 
-      const newStack = compose(this.stack, having(predicate));
+      const newStack = compose(this.stack, having(predicates));
       return new Query(this._selected, this._from, this._whered, newStack, this._grouped);
     }
 
@@ -77,18 +74,22 @@ const query = (() => {
     }
   }
 
+  const map = (arr, fn) => arr.map(fn);
+  const mapMany = (arr, fn) => [].concat.apply([], map(arr, fn));
+
+  const cartesian_product = (list) => {
+    return list.reduce((cps, item) => {
+      return mapMany(cps, previous => {
+        return map(item, i => {
+          return previous.concat([i]);
+        })
+      })
+    }, [[]]);
+  }
+
   class JoinedQuery extends Query {
-    constructor(select, [first, ...next], where, stack = id, group = 0) {
-
-      const join = first.reduce((join, f) => {
-        next.forEach((col, i) => {
-          join[i] = [];
-          col.forEach(n => join.push([f, n]))
-        });
-        return join;
-      },[]);
-
-      super(select, join, where, stack, group);
+    constructor(select, arrays, where, stack = id, group = 0) {
+      super(select, cartesian_product(arrays), where, stack, group);
     }
   }
 
@@ -113,14 +114,14 @@ const prime = (number) => isPrime(number) ? 'prime' : 'divisible';
 const lessThan = (lt) => (n) => n < lt ? `less than ${lt}` : `bigger than ${lt}`;
 const inGroup = (identifier) => (group) => group[0] === identifier;
 
-/*console.log
+console.log
 (
   query()
     .from(set)
     .groupBy(parity, prime)
     .having(inGroup('even'))
     .execute()
-)*/
+)
 
 var teachers = [
   { teacherId: '1', teacherName: 'Peter' },
@@ -139,36 +140,18 @@ var classes = [
   { className: 'B', tutor: '2', student: '2' }
 ];
 
-const teacherJoin = (join) => join[0].teacherId === join[1].tutor && join[1].studentId === join[2].student;
+const teacherJoin = (join) => join[0].teacherId === join[1].tutor;
 const student = (join) => ({ studentName: join[1].studentName, teacherName: join[0].teacherName });
 
-const data = [teachers, students, classes];
-
-for (const set of data) {
-}
-
-const d = [[1, 2], [4, 5], [7, 8]];
-
-const cartesian_product = ([[head, ...tail], ...all]) => {
-  console.log(head, tail, all);
-
-  return head
-    ? [[head].concat(cartesian_product(all.concat([tail])))]
-    : [];
-}
-
-var join = [];
-d[0].forEach(t => {
-  d[1].forEach(e => {
-    d[2].forEach(c => {
-      join.push([t, e, c]);
-    });
-  });
-});
+const classJoin = (join) => teacherJoin(join) && join[2].tutor === join[0].teacherId && join[2].student === join[1].studentId;
+const studentClass = (join) => ({ studentName: join[1].studentName, teacherName: join[0].teacherName, classroom: join[2].className });
+const tutor1 = (join) => join[1].tutor === "1";
 
 console.log
 (
-  //join,
-  cartesian_product(d)
-  //query().from(teachers, students)/*.where(teacherJoin)*/.select().execute()
+  query().from(teachers, students, classes).where(classJoin).where(tutor1).select(studentClass).execute()
+)
+console.log
+(
+  query().from(numbers).groupBy(x => x).having(([h]) => h > 1).having(([h]) => !(h%2)).select(([x, y]) => ({value: x, frequency: y.length})).execute()
 )
